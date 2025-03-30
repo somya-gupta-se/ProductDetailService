@@ -21,13 +21,13 @@ public class ProductDetailService {
     @Autowired
     private ProductClient productClient;
 
-    @KafkaListener(topics = "productTopic", groupId = "productGroup")
+/*    @KafkaListener(topics = "productTopic", groupId = "productGroup")
     public void listenProduct(ConsumerRecord<String, String> record)
 
     {
         System.out.println(" Received Order Notification: Key: " + record.key() +
                 ", Value: " + record.value());
-    }
+    }*/
 
 
     public ProductDetail addProductDetail(ProductDetail productDetail) {
