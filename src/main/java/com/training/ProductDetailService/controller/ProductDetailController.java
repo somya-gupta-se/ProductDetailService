@@ -21,7 +21,7 @@ import java.util.Optional;
         }
 
         @GetMapping("/get/{productId}")
-        public Optional<ProductDetail> getProductDetail(@PathVariable Long productId) {
+        public ProductDetail getProductDetail(@PathVariable Long productId) {
             return service.getProductDetailByProductId(productId);
         }
 
